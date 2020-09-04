@@ -1,0 +1,8 @@
+- testlink_testsuite_name: 运营活动
+  testlink_id: '2362'
+  testlink_name: 跑马灯-轮播正常
+  testlink_external_id: ZY-2
+  case_setup: ['start','debt_page','debt_mine_page','debt_my_wallet']
+  case_teststeps: []
+  case_testdata: []
+  expect: []

@@ -1,0 +1,16 @@
+# 测试用例文件，用来代替测试脚本
+
+-
+  case_name: test_debt_page
+  test_link_id:
+  desc:
+  setup: ['start','debt_page']
+  test_steps: [{'element_name': '','operation': ''},{'': ' '}]
+  teardown:
+-
+  case_name: test_debt_page
+  test_link_id:
+  desc:
+  setup: ['start','debt_page']
+  test_steps: [{'element_name': '','operation': ''},{'': ' '}]
+  teardown:

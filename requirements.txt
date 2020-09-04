@@ -1,0 +1,11 @@
+selenium
+click
+airtest
+logbook
+pytest
+arrow
+Appium-Python-Client
+#allure-pytest
+pytestreport
+TestLink-API-Python-client
+ruamel

@@ -1,0 +1,10 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+# IntelliJ project files
+.idea/*
+*.pyc
+v1/report
+/allure_report
+/pytest_report
+*.log
+*.apk

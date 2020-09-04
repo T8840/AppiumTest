@@ -1,0 +1,52 @@
+# 页面元素Data层
+# Example： {'main_page': {'invest': [{'by': 'id'}, {'value': 'com.mymoney:id/main_top_nav_button_second'}], 'debt': [{'by': 'id'}, {'value': 'com.mymoney:id/main_top_nav_button_first'}]}
+# 页面与页面间用空格隔开。
+# 每个页面有三层，
+# 第一层page页面名称，如：debt_page
+# 第二层为页面元素名称
+# 第三层为页面元素的属性
+          # 属性分为以下几种：
+          # by: 页面元素是通过哪种方式定位到的
+          # value : 定位方法对应的值
+          # operate: 在页面找到该元素后需要执行的操作，默认不填值为false。如果填写该值的话，支持以下几种操作元素方法
+                                                                 # click
+                                                                 # send_keys 需要
+## 注意：最好不要出现页面名称与元素名称重名的情况，默认是取第一次出现的值
+
+# 元素黑名单
+black_list:
+  toast: ['id','image_cancel']
+  tips: ['id','tips']
+
+# 主页面
+main_page:
+  icon_invest: ['id','com.mymoney:id/main_top_nav_button_second']
+  icon_debt: ['id','com.mymoney:id/main_top_nav_button_first']
+  icon_account_book:
+
+# 登录页
+login_page:
+  username_input:
+    - by : id
+    - value : 'com.mymoney:id/recently_used_login_way_tv'
+    - method: send_keys
+    - text: 123
+  pwd_input:
+    - by: id
+    - value :
+
+# 投资页面
+invest_page:
+
+
+# 贷款主页面
+debt_page:
+  icon_mine:  ['xpath','//*[@resource-id="com.mymoney:id/fl_activity_root"]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]']
+
+# 贷款-我的页面
+debt_mine_page:
+  icon_debt_my_wallet: ['xpath','//*[@resource-id="vux_view_box_body"]/android.view.View[3]/android.view.View[7]/android.view.View[1]']
+
+# 贷款-我的-我的钱包页
+debt_wallet_page:
+  debt_wallet_record_flow: ['xpath',"//android.widget.TextView[@text='奖励记录']"]
